@@ -8,7 +8,7 @@ package Modelo;
  *
  * @author osori
  */
-public class ItemVenta {
+public class itemVenta {
     
     // Atributos
     private int id_venta;
@@ -17,11 +17,11 @@ public class ItemVenta {
     private double precio;
 
     // Constructor
-    public ItemVenta() {
+    public itemVenta() {
 
     }
     
-    public ItemVenta(int id_venta, int id_pro, int cantidad, double precio) {
+    public itemVenta(int id_venta, int id_pro, int cantidad, double precio) {
         this.id_venta = id_venta;
         this.id_pro = id_pro;
         this.cantidad = cantidad;

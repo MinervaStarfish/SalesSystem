@@ -8,26 +8,23 @@ package Modelo;
  *
  * @author osori
  */
-public class Productos {
+public class producto {
 
     // Atributos
     private String id;
     private String nombre;
-    private int proveedor;
+    private String proveedor;
     private int stock;
     private double precio;
 
     // Constructor
-    public Productos() {
-
-    }
-
-    public Productos(String id, String nombre, int proveedor, int stock, double precio) {
+    // public Productos() {}
+    public producto(String id, String nombre, double precio, int stock, String proveedor) {
         this.id = id;
         this.nombre = nombre;
-        this.proveedor = proveedor;
-        this.stock = stock;
         this.precio = precio;
+        this.stock = stock;
+        this.proveedor = proveedor;
     }
 
     // Métodos
@@ -47,11 +44,11 @@ public class Productos {
         this.nombre = nombre;
     }
 
-    public int getProveedor() {
+    public String getProveedor() {
         return proveedor;
     }
 
-    public void setProveedor(int proveedor) {
+    public void setProveedor(String proveedor) {
         this.proveedor = proveedor;
     }
 
@@ -69,5 +66,13 @@ public class Productos {
 
     public void setPrecio(double precio) {
         this.precio = precio;
+    }
+
+    public String toString() {
+        return "Codigo: " + id + "\n"
+                + "Nombre: " + nombre + "\n"
+                + "Precio: " + precio + "\n"
+                + "Stock: " + stock + "\n"
+                + "Proveedor: " + proveedor + "\n";
     }
 }

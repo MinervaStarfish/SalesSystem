@@ -1,0 +1,15 @@
+A000
+Coca
+1000
+5
+Proveedor 1
+A001
+Mari
+2000
+4
+Proveedor 2
+001
+Producto1
+19.99
+100
+Proveedor1

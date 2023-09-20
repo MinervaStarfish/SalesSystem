@@ -8,33 +8,33 @@ package Modelo;
  *
  * @author osori
  */
-public class Proveedor {
+public class proveedor {
 
     // Atributos
-    private int id;
+    private String nit;
     private String nombre;
     private String telefono;
     private String direccion;
 
     // Constructor
-    public Proveedor() {
+    public proveedor() {
 
     }
 
-    public Proveedor(int id, String nombre, String telefono, String direccion) {
-        this.id = id;
+    public proveedor(String nit, String nombre, String telefono, String direccion) {
+        this.nit = nit;
         this.nombre = nombre;
         this.telefono = telefono;
         this.direccion = direccion;
     }
 
     // Métodos
-    public int getId() {
-        return id;
+    public String getNit() {
+        return nit;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setNit(String nit) {
+        this.nit = nit;
     }
 
     public String getNombre() {
@@ -59,5 +59,12 @@ public class Proveedor {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+    
+    public String toString() {
+        return "NIT: " + nit + "\n"
+                + "Nombre: " + nombre + "\n"
+                + "Telefono: " + telefono + "\n"
+                + "Direccion: " + direccion + "\n";
     }
 }

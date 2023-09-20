@@ -8,7 +8,7 @@ package Modelo;
  *
  * @author osori
  */
-public class Venta {
+public class venta {
 
     // Atributos
     private int id;
@@ -19,11 +19,11 @@ public class Venta {
     private String fecha;
 
     // Constructor
-    public Venta() {
+    public venta() {
 
     }
 
-    public Venta(int id, int cliente, String nombre_cli, String vendedor, double total, String fecha) {
+    public venta(int id, int cliente, String nombre_cli, String vendedor, double total, String fecha) {
         this.id = id;
         this.cliente = cliente;
         this.nombre_cli = nombre_cli;

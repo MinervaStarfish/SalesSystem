@@ -4,11 +4,18 @@
  */
 package Modelo;
 
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
 /**
  *
  * @author osori
  */
-public class Cliente {
+public class cliente {
 
     // Atributos
     private int cedula;
@@ -17,10 +24,10 @@ public class Cliente {
     private String direccion;
 
     // Constructor
-    public Cliente() {
+    public cliente() {
     }
 
-    public Cliente(int cedula, String nombre, String telefono, String direccion) {
+    public cliente(int cedula, String nombre, String telefono, String direccion) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.telefono = telefono;
@@ -60,3 +67,5 @@ public class Cliente {
         this.direccion = direccion;
     }
 }
+
+
